@@ -405,7 +405,7 @@ function EditCertificateForm({closeModal, template, handleEditForm}) {
 
         <div className="flex gap-3">
 
-          <button type="submit" className="btn hover:bg-green-500 bg-green-600 text-whiteText py-2 px-5 md:p-4 rounded ">Update</button>
+          <button type="submit" className="btn hover:bg-green-500 bg-green-600 text-whiteText py-2 px-5 md:p-4 rounded ">Save Changes</button>
 
           <button type="button" onClick={closeModal} className="btn hover:bg-red-500 bg-red-600 text-whiteText py-2 px-5 md:p-4 rounded">Cancel</button>
 
