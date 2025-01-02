@@ -115,9 +115,7 @@ function EditCertificateForm({closeModal, template, handleEditForm}) {
 
   const handleSumbit = (e) => {
 
-    e.preventDefault()
-
-    // const data = {firstName, lastName, email, phone, id: template.id};
+    e.preventDefault();
 
     const data = {
       firstName,

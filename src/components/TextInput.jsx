@@ -3,7 +3,9 @@ const TextInput = (props) => {
   return (
     <>
       <label>
+
         {props.labelText}
+        
         {
           props.value.length === 0 ? <input
             type="text"

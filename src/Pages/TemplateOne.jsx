@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MarginX from '../components/MarginX'
+import MarginX from '../components/MarginX';
 import TemplateOneDesign from "../components/TemplateOneDesign";
 import { v4 as uuid } from "uuid";
 
@@ -70,9 +70,13 @@ const TemplateOne = () => {
   ])
 
   const handleEditForm = (id, FormData) => {
+
     setTemplateDetails(
+
       templateDetails.map((template) => template.id === id ? FormData : template)
+
     )
+
   }
 
   // useEffect( () => {
@@ -91,12 +95,12 @@ const TemplateOne = () => {
 
         <div className="flex flex-col items-center justify-center">
           {
-            // templateDetails.length === 0  ? <img src={logo} className="mt-10" alt="" /> :
             <TemplateOneDesign templateDetails={templateDetails} handleEditForm={handleEditForm} />
           }
         </div>
 
       </MarginX>
+
     </>
   )
 }
